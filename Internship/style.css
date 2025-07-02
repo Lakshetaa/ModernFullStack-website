@@ -1,0 +1,19 @@
+.flexContainer{
+    display: flex;
+    height: 100vh;
+    margin:10px;
+    border: 1px solid red;
+    flex-wrap: wrap;
+}
+
+.flexItem{
+    height: 100px;
+    width: 100px;
+    background-color: lightblue;
+    border: 1px solid blue;
+}
+
+.flexItem:nth-child(4){
+    align-self: flex-end;
+    order:1;
+}

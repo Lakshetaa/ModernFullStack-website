@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gridContainer{
+            height: 100vh;
+            display:grid;
+            grid-template-columns: repeat(4,1fr); 
+            justify-content: center;
+            /* grid-template-rows: 200px 200px 200px;} */
+        }
+        .gridItem{
+            background-color: yellow;
+            color:red;
+            /* width:150px; */
+            /* height: 100px; */
+            border: solid 2px red ;
+
+        }
+
+        .gridItem:nth-child(1){
+            grid-column-start: 1;
+            grid-column-end: -1;
+        }
+        .gridItem:nth-child(2){
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+        .gridItem:nth-child(9){
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start:3;
+            grid-column-end:4;
+        }
+    </style>
+</head>
+<body>
+    <div class="gridContainer">
+        <div class="gridItem">1</div>
+        <div class="gridItem">2</div>
+        <div class="gridItem">3</div>
+        <div class="gridItem">4</div>
+        <div class="gridItem">5</div>
+        <div class="gridItem">6</div>
+        <div class="gridItem">7</div>
+        <div class="gridItem">8</div>
+        <div class="gridItem">9</div>
+        <div class="gridItem">10</div>
+    </div>
+    
+</body>
+</html>
